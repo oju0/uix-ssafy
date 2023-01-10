@@ -1,0 +1,41 @@
+[hidden] {
+  display: none !important;
+}
+
+.container {
+  /* @apply mx-auto max-width-[1280px]; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.IconGroup,
+.LogoGroup {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.Icon {}
+.Icon--lock {}
+.Icon--show {}
+.Icon--hide {}
+.Icon--letter {}
+
+
+.Logo {
+  /* @apply m-0 inline-flex; */
+  margin: 0;
+  display: inline-block;
+  width: 246px;
+  height: 56px;
+  background: url('../assets/logo__sprite.svg') 0px 0px no-repeat;
+}
+
+.Logo--mono {
+  background-position-y: -56px;
+}
+
+.Logo--black {
+  background-position-y: -112px;
+}
