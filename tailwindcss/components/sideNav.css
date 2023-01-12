@@ -1,0 +1,13 @@
+/* 동적으로 생성된 콘텐츠이므로 @layer 디렉티브를 사용하지 않습니다. */
+
+.sideNav {
+  @apply p-5 bg-gray-100 w-[300px] h-screen fixed transition duration-300 border-r-slate-200 border-r-[1px];
+
+  &__headline {
+    @apply text-base font-bold uppercase mb-2;
+  }
+
+  &__link {
+    @apply px-2 py-1 block text-gray-600 hover:text-gray-800 transition duration-300;
+  }
+}

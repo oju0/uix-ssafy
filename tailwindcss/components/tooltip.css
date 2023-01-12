@@ -1,0 +1,49 @@
+@layer components {
+  .tooltip {
+    @apply relative inline-flex bg-gray-100 text-gray-600 font-bold;
+    padding: 6px 8px;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+    }
+
+    /* 참고: 화살표 생성기 http://apps.eky.hk/css-triangle-generator/ */
+
+    &--top::after {
+      @apply absolute border-b-gray-100;
+      @apply border-r-transparent;
+      top: 0;
+      left: 8px;
+      translate: 0 -6px;
+      border-width: 0 5px 6px 5px;
+    }
+    
+    &--right::after {
+      @apply absolute border-l-gray-100;
+      right: 0;
+      top: 50%;
+      translate: 6px -50%;
+      border-width: 5px 0 5px 6px;
+    }
+    
+    &--bottom::after {
+      @apply absolute border-t-gray-100;
+      bottom: 0;
+      left: 8px;
+      translate: 0 100%;
+      border-width: 6px 5px 0 5px;
+    }
+
+    &--left::after {
+      @apply absolute border-r-gray-100;
+      left: 0;
+      top: 50%;
+      translate: -100% -50%;
+      border-width: 5px 6px 5px 0;
+    }
+  }
+}

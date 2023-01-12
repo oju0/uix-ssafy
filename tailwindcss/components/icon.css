@@ -1,0 +1,28 @@
+@layer components {
+  .icon {
+    --w: 44px;
+    --h: 48px;
+
+    display: inline-block;
+    width: var(--w);
+    height: var(--h);
+    background: url("/assets/icons/icon-sprite.svg") no-repeat;
+
+    &--letter {
+      background-position-y: 0;
+    }
+
+    &--lock {
+      background-position-y: calc(var(--h) * -1);
+    }
+
+    &--eye-hide {
+      background-position-y: calc(var(--h) * -2);
+    }
+
+    &--eye-show {
+      background-position-y: calc(var(--h) * -3);
+    }
+  }
+
+}

@@ -1,0 +1,28 @@
+@layer components {
+  .input {
+    --icon-size: 44px;
+
+    @apply flex items-center;
+
+    & input {
+      @apply text-base p-3 w-full;
+      @apply placeholder:text-gray-600 font-normal;
+    }
+
+    &--password {
+      position: relative;
+
+      & input {
+
+        width: calc(100% - var(--icon-size));
+        /* margin-right: var(--icon-size); */
+      }
+
+      & button {
+        @apply absolute right-0;
+        top: 50%;
+        translate: 0 -50%;
+      }
+    }
+  }
+}

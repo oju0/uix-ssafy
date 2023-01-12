@@ -1,0 +1,14 @@
+@layer base {
+
+  abbr[title] {
+    @apply cursor-help;
+    text-decoration: none;
+
+    @media print {
+      &::after {
+        content: '(' attr(title) ')';
+      }
+    }
+  }
+  
+}

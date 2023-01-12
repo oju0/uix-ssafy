@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Input 컴포넌트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Input 컴포넌트는 일반적으로 자주 사용되는 아토믹 컴포넌트입니다." />
+    <meta name="theme-color" content="#4285f4" />
+    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/pretendard/dist/web/static/pretendard.css" as="style" crossorigin />
+    <script type="module" src="/main.js"></script>
+  </head>
+
+  <body>
+    <noscript>이 애플리케이션을 사용하기 위해서는 JavaScript 활성화가 필요합니다.</noscript>
+
+    <div class="flex gap-4">
+
+      <div data-side-nav></div>
+
+      <main class="container ml-[300px] p-8">
+
+        <h1 class="text-5xl mb-16 text-black font-thin">Input</h1>
+
+        <h2 class="demo__headline">Email Input</h2>
+        <div class="demo">
+          <div class="demo__code">
+            <div class="input input--email w-[296px]">
+              <label for="input-email" class="sr-only">아이디(이메일)</label>
+              <input id="input-email" type="email" placeholder="아이디(이메일)" />
+            </div>
+          </div>
+
+          <button type="button" class="demo__button" aria-label="code 복사" title="code 복사"></button>
+        </div>
+
+        <h2 class="demo__headline">Password Input (default)</h2>
+        <div class="demo">
+          <div class="demo__code">
+            <div class="input input--password w-[296px]">
+              <label for="input-password" class="sr-only">비밀번호</label>
+              <input id="input-password" type="password" placeholder="비밀번호" />
+              <button type="button" class="icon icon--eye-show" aria-label="비밀번호 보기" title="비밀번호 보기"></button>
+            </div>
+          </div>
+
+          <button type="button" class="demo__button" aria-label="code 복사" title="code 복사"></button>
+        </div>
+        
+        <h2 class="demo__headline">Password Input (inputed)</h2>
+        <div class="demo">
+          <div class="demo__code">
+            <div class="input input--password w-[296px]">
+              <label for="input-password-2" class="sr-only">비밀번호</label>
+              <input id="input-password-2" type="password" placeholder="비밀번호" value="123456789abcd" />
+              <button type="button" class="icon icon--eye-show" aria-label="비밀번호 보기" title="비밀번호 보기"></button>
+            </div>
+          </div>
+
+          <button type="button" class="demo__button" aria-label="code 복사" title="code 복사"></button>
+        </div>
+
+        <h2 class="demo__headline">Password Input (show password)</h2>
+        <div class="demo">
+          <div class="demo__code">
+            <div class="input input--password w-[296px]">
+              <label for="input-password-3" class="sr-only">비밀번호</label>
+              <input id="input-password-3" type="text" placeholder="비밀번호" value="123456789abcd" />
+              <button type="button" class="icon icon--eye-hide" aria-label="비밀번호 감추기" title="비밀번호 감추기"></button>
+            </div>
+          </div>
+
+          <button type="button" class="demo__button" aria-label="code 복사" title="code 복사"></button>
+        </div>
+
+        
+
+      </main>
+    </div>
+
+  </body>
+
+</html>

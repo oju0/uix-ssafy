@@ -1,0 +1,18 @@
+/* base --------------------------------------------------------------------- */
+
+@import url('tailwindcss/base');
+@import url('./base/abbr.css');
+@import url('./base/a.css');
+
+/* components --------------------------------------------------------------- */
+
+@import url('tailwindcss/components');
+@import url('./components/icon.css');
+@import url('./components/button.css');
+@import url('./components/sideNav.css');
+@import url('./components/tooltip.css');
+@import url('./components/input.css');
+
+/* utilities ---------------------------------------------------------------- */
+
+@import url('tailwindcss/utilities');

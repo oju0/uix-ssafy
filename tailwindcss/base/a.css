@@ -1,0 +1,11 @@
+@layer base {
+
+  a[href] {
+    @media print {
+      &::after {
+        content: '(🔗' attr(href) ')';
+      }
+    }
+  }
+  
+}
